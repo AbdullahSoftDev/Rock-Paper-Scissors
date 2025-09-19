@@ -1,0 +1,11 @@
+Rock, Paper, Scissors a console based Game using C++ on the implementations of real life scenario Against Computer
+
+This C++ program is a console-based game of **Rock, Paper, Scissors**.
+
+ Key Features:
+* **User Interaction:** The game prompts the user to enter their name and then their choice of "rock," "paper," or "scissors". It includes input validation to ensure the user enters a valid choice.
+* **Randomized Computer Choice:** The computer's move is determined by a random number generator. The `srand(time(0))` function is used to seed the generator, and a helper function `gCC()` (short for `getComputerChoice`) selects a random choice from an array of strings: "rock," "paper," and "scissors".
+* **Game Logic:** The `Winner()` function compares the user's choice with the computer's choice to determine the winner of each round. It handles all possible outcomes: a tie, a player win, or a computer win.
+* **Graphical Representation:** The program uses ASCII art and ANSI escape codes to display a visual representation of "rock," "paper," and "scissors" in the console. It also uses color to enhance the visual appeal of the score display and other text.
+* **Scoring System:** The game keeps track of the player's and the computer's scores. The `dS()` function (short for `displayScore`) presents a formatted score-keeping box in the console.
+* **Play Again Option:** After each round, the user is asked if they want to play again, allowing for multiple rounds within a single execution of the program. The game continues as long as the user enters 'Y' or 'y'.
